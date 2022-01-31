@@ -20,12 +20,14 @@ public class SetUp {
 	Logger log;
 	static ExtentReports extent;
 	static ExtentTest test;
+	static boolean result;
+	
 	@BeforeSuite
 	public void setup() {
 		WebDriverManager.chromedriver().setup();
 
 		driver = new ChromeDriver();
-		driver.get("https://opensource-demo.orangehrmlive.com/index.php/dashboard");
+		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		//extent report configuration
 
@@ -36,10 +38,7 @@ public class SetUp {
 
 		//log4j2 configuration
 		log= LogManager.getLogger(SetUp.class);
-		//validate page title
-		if(!driver.getTitle().equalsIgnoreCase("OrangeHRM")) {
-			System.err.println("Invalid page title");
-		}
+		
 	}
 	@AfterSuite 
 	public void CleanUp() { 

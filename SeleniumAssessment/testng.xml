@@ -2,8 +2,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
-    <packages>
-      <package name="com.ilab.selenium"/>
-    </packages>
+    <classes>
+    <class name="com.ilab.selenium.SetUp"/>
+    <class name="com.ilab.selenium.Login"/>
+    <class name="com.ilab.selenium.Admin"/>
+    <class name="com.ilab.selenium.AddButton"/>
+      <class name="com.ilab.selenium.AddUser"/>
+      <class name="com.ilab.selenium.SearchUser"/>
+      <class name="com.ilab.selenium.DeleteUser"/>
+      <class name="com.ilab.selenium.SearchDeletedUser"/>
+      <class name="com.ilab.selenium.UserLogout"/>
+    </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

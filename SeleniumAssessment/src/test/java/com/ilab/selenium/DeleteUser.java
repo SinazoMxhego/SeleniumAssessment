@@ -2,7 +2,7 @@ package com.ilab.selenium;
 
 import org.openqa.selenium.By;
 
-public class DeleteUser {
+public class DeleteUser  {
 public void DeleteSelectedUser() {
 SetUp.driver.findElement(By.name("chkSelectRow[]")).click();
 
