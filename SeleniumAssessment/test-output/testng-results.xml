@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-01-30T17:02:37Z" name="Default suite" finished-at="2022-01-30T17:02:43Z" duration-ms="5912">
+    <groups>
+    </groups>
+    <test started-at="2022-01-30T17:02:37Z" name="Default test" finished-at="2022-01-30T17:02:43Z" duration-ms="5912">
+      <class name="com.ilab.selenium.SetUp">
+        <test-method signature="setup()[pri:0, instance:com.ilab.selenium.SetUp@7d9e8ef7]" started-at="2022-01-30T19:02:37Z" name="setup" finished-at="2022-01-30T19:02:43Z" duration-ms="5891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- com.ilab.selenium.SetUp -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
