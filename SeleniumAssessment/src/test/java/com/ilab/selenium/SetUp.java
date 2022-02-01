@@ -21,13 +21,13 @@ public class SetUp {
 	static ExtentReports extent;
 	static ExtentTest test;
 	static boolean result;
-	
+
 	@BeforeSuite
 	public void setup() {
 		WebDriverManager.chromedriver().setup();
 
 		driver = new ChromeDriver();
-		
+
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		//extent report configuration
 
@@ -38,7 +38,7 @@ public class SetUp {
 
 		//log4j2 configuration
 		log= LogManager.getLogger(SetUp.class);
-		
+
 	}
 	@AfterSuite 
 	public void CleanUp() { 
